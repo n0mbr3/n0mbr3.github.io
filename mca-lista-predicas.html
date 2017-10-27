@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Prédicas - Iglesia MCA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#054d44">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#054d44">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#054d44">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="mca-estilos.css">
+
+	<style>
+	</style>
+
+</head>
+
+<body>
+
+	<!-- ====== BARRA DE NAVEGACIÓN ====== -->
+
+	<nav class="navbar navbar-expand-sm navbar-dark bg-navbar">
+
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="logo-mca-mini-web-claro-180x100.png" height="50" width="90" alt=""></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mi_barrita">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="mi_barrita">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+					<li class="nav-item active"><a class="nav-link" href="mca-lista-predicas.html">Prédicas</a></li>
+					<li class="nav-item"><a class="nav-link" href="mca-lista-articulos.html">Artículos</a></li>
+					<li class="nav-item"><a class="nav-link" href="mca-contacto.html">Contacto</a></li>									
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+
+	<!-- ====== BREADCRUMB ====== -->
+
+	<div class="container-listas">
+		<ul class="breadcrumb px-0 my-3">
+			<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+			<li class="breadcrumb-item"><a href="mca-lista-predicas.html">Prédicas</a></li>
+
+		</ul>
+
+	</div>
+
+
+	<!-- ====== TÍTULO DE LA PÁGINA ====== -->
+
+	<div class="container-listas mb-4">
+		<h1 class="text-secondary">Lista de Prédicas</h1>
+
+	</div>
+
+
+	<!-- ====== BOTÓN PARA MOSTRAR FOMULARIO ====== -->
+
+	<div id="div_mostrar_form" class="container text-center my-4">
+		<hr>
+		<button id="boton_mostrar_form" type="button" class="btn btn-info">click aquí para organizar por fecha</button>
+		<hr>
+	</div>
+
+
+	<!-- ====== FORMULARIO PARA ORDENAR LA LISTA ====== -->	
+
+	<div id="form_ordenar" class="container-listas mb-4">
+		<hr>
+		<form method="post">
+			<fieldset>
+				<div class="row">
+					<div class="col-sm- col-md-3 form-ordenar-listas"><legend class="d-block">Ordenar por:</legend></div>
+					<div class="col-sm- col-md-2 form-ordenar-listas">
+						<select name="mes" id="">
+							<option value="mes">Mes</option>
+							<option value="enero">Enero</option>
+							<option value="febrero">Febrero</option>
+							<option value="marzo">Marzo</option>
+							<option value="abril">Abril</option>
+							<option value="mayo">Mayo</option>
+							<option value="junio">Junio</option>
+							<option value="julio">Julio</option>
+							<option value="agosto">Agosto</option>
+							<option value="septiembre">Septiembre</option>
+							<option value="octubre">Octubre</option>
+							<option value="noviembre">Noviembre</option>
+							<option value="diciembre">Diciembre</option>
+						</select>
+					</div>
+					<div class="col-sm- col-md-2 form-ordenar-listas">
+						<select name="año" id="">
+							<option value="año">Año</option>
+							<option value="2017">2017</option>
+							<option value="2016">2016</option>
+							<option value="2015">2015</option>
+						</select>
+					</div>
+					<div class="col-sm- col-md-3 form-ordenar-listas">
+						<select name="orden" id="">
+							<option value="nuevos-primero">Nuevos primero</option>
+							<option value="viejos-primero">Viejos primero</option>
+						</select>
+					</div>
+					<div class="col-sm- col-md-2 form-ordenar-listas">
+						<input class="" type="submit" value="Ordenar">
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<hr>
+	</div>
+
+	<div class="container-listas text-center">
+		<p class="sombra-inferior">A continuación una lista con las seis (6) últimas prédicas...</p>
+	</div>
+
+
+	<!-- ============= AQUÍ COMIENZA LA LISTA DE ARTÍCULOS ============= -->
+
+	<div class="container-listas"> <!-- para que no se pegue a los bordes en móviles -->
+
+		<!-- PRÉDICA 1 -->
+
+		<div class="container-listas articulo-en-lista">
+			<div class="container-fluid">
+				<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+				<h2 class="">
+					<a class="neutro" href="mca-predica.html">¿Qué Clase de Oveja Soy?</a>
+				</h2>
+			</div>
+
+			<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+				<a class="" href="mca-predica.html">
+					<img class="img-fluid" src="oveja-o-cabrito.jpg" alt="">
+					<img class="boton-play-icono" src="boton-play.png" alt="">
+				</a>
+			</div>
+
+			<div class="container-fluid">
+				<p class="text-secondary text-right mb-1"><em>Septiembre 1, 2017</em></p>
+			</div>
+
+			<div class="container-fluid mt-sm-2">
+				<p>En el Nuevo Testamento es la Palabra de Dios, él es bueno y amoroso, y nos muestra su bondad por medio de él, su influencia se mantiene para siempre. <a href="mca-predica.html">LEER MÁS</a></p>
+			</div>
+		</div>
+
+
+		<!-- PRÉDICA 2 -->
+
+		<div class="container-listas articulo-en-lista">
+			<div class="container-fluid">
+				<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+				<h2 class="">
+					<a class="neutro" href="mca-predica.html">¿Cuándo Será el Rapto?</a>
+				</h2>
+			</div>
+
+			<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+				<a class="" href="mca-predica.html">
+					<img class="img-fluid" src="cuando-sera-el-rapto.jpg" alt="">
+					<img class="boton-play-icono" src="boton-play.png" alt="">
+				</a>
+			</div>
+
+			<div class="container-fluid">
+				<p class="text-secondary text-right mb-1"><em>Junio 13, 2017</em></p>
+			</div>
+
+			<div class="container-fluid mt-sm-2">
+				<p>Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. <a href="mca-predica.html">LEER MÁS</a></p>
+			</div>
+		</div>
+
+
+		<!-- PRÉDICA 3 -->
+
+		<div class="container-listas articulo-en-lista">
+			<div class="container-fluid">
+				<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+				<h2 class="">
+					<a class="neutro" href="mca-predica.html">Demonios y Ángeles Caídos</a>
+				</h2>
+			</div>
+
+			<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+				<a class="" href="mca-predica.html">
+					<img class="img-fluid" src="angeles-caidos.jpg" alt="">
+					<img class="boton-play-icono" src="boton-play.png" alt="">
+				</a>
+			</div>
+
+			<div class="container-fluid">
+				<p class="text-secondary text-right mb-1"><em>Octubre 5, 2017</em></p>
+			</div>
+
+			<div class="container-fluid mt-sm-2">
+				<p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. <a href="mca-predica.html">LEER MÁS</a></p>
+			</div>
+		</div>
+
+		<!-- PRÉDICA 4 -->
+
+		<div class="container-listas articulo-en-lista">
+			<div class="container-fluid">
+				<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+				<h2 class="">
+					<a class="neutro" href="mca-predica.html">Lorem Ipsum Dolor Sit Amet</a>
+				</h2>
+			</div>
+
+			<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+				<a class="" href="mca-predica.html">
+					<img class="img-fluid" src="https://picsum.photos/800/450/?image=947" alt="">
+					<img class="boton-play-icono" src="boton-play.png" alt="">
+				</a>
+			</div>
+
+			<div class="container-fluid">
+				<p class="text-secondary text-right mb-1"><em>Enero 1, 1999</em></p>
+			</div>
+
+			<div class="container-fluid mt-sm-2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="mca-predica.html">LEER MÁS</a></p>
+			</div>
+		</div>
+
+		<!-- PRÉDICA 5 -->
+
+		<div class="container-listas articulo-en-lista">
+			<div class="container-fluid">
+				<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+				<h2 class="">
+					<a class="neutro" href="mca-predica.html">Lorem Ipsum Dolor Sit Amet</a>
+				</h2>
+			</div>
+
+			<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+				<a class="" href="mca-predica.html">
+					<img class="img-fluid" src="https://picsum.photos/800/450/?image=92" alt="">
+					<img class="boton-play-icono" src="boton-play.png" alt="">
+				</a>
+			</div>
+
+			<div class="container-fluid">
+				<p class="text-secondary text-right mb-1"><em>Enero 1, 1999</em></p>
+			</div>
+
+			<div class="container-fluid mt-sm-2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="mca-predica.html">LEER MÁS</a></p>
+			</div>
+		</div>
+
+		<!-- PRÉDICA 6 -->
+
+		<div class="container-listas articulo-en-lista">
+			<div class="container-fluid">
+				<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+				<h2 class="">
+					<a class="neutro" href="mca-predica.html">Lorem Ipsum Dolor Sit Amet</a>
+				</h2>
+			</div>
+
+			<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+				<a class="" href="mca-predica.html">
+					<img class="img-fluid" src="https://picsum.photos/800/450/?image=779" alt="">
+					<img class="boton-play-icono" src="boton-play.png" alt="">
+				</a>
+			</div>
+
+			<div class="container-fluid">
+				<p class="text-secondary text-right mb-1"><em>Enero 1, 1999</em></p>
+			</div>
+
+			<div class="container-fluid mt-sm-2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="mca-predica.html">LEER MÁS</a></p>
+			</div>
+		</div>
+
+
+		<!-- ______ MÁS PRÉDICAS ______ -->
+
+		<div id="div_mas_predicas">
+
+			<!-- PRÉDICA 7 -->
+
+			<div class="container-listas articulo-en-lista">
+				<div class="container-fluid">
+					<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+					<h2 class="">
+						<a class="neutro" href="mca-predica.html">Lorem Ipsum Dolor Sit Amet</a>
+					</h2>
+				</div>
+
+				<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+					<a class="" href="mca-predica.html">
+						<img class="img-fluid" src="https://picsum.photos/800/450/?image=518" alt="">
+						<img class="boton-play-icono" src="boton-play.png" alt="">
+					</a>
+				</div>
+
+				<div class="container-fluid">
+					<p class="text-secondary text-right mb-1"><em>Enero 1, 1999</em></p>
+				</div>
+
+				<div class="container-fluid mt-sm-2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="mca-predica.html">LEER MÁS</a></p>
+				</div>
+			</div>
+
+			<!-- PRÉDICA 8 -->
+
+			<div class="container-listas articulo-en-lista">
+				<div class="container-fluid">
+					<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+					<h2 class="">
+						<a class="neutro" href="mca-predica.html">Lorem Ipsum Dolor Sit Amet</a>
+					</h2>
+				</div>
+
+				<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+					<a class="" href="mca-predica.html">
+						<img class="img-fluid" src="https://picsum.photos/800/450/?image=1075" alt="">
+						<img class="boton-play-icono" src="boton-play.png" alt="">
+					</a>
+				</div>
+
+				<div class="container-fluid">
+					<p class="text-secondary text-right mb-1"><em>Enero 1, 1999</em></p>
+				</div>
+
+				<div class="container-fluid mt-sm-2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="mca-predica.html">LEER MÁS</a></p>
+				</div>
+			</div>
+
+			<!-- PRÉDICA 9 -->
+
+			<div class="container-listas articulo-en-lista">
+				<div class="container-fluid">
+					<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+					<h2 class="">
+						<a class="neutro" href="mca-predica.html">Lorem Ipsum Dolor Sit Amet</a>
+					</h2>
+				</div>
+
+				<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+					<a class="" href="mca-predica.html">
+						<img class="img-fluid" src="https://picsum.photos/800/450/?image=1003" alt="">
+						<img class="boton-play-icono" src="boton-play.png" alt="">
+					</a>
+				</div>
+
+				<div class="container-fluid">
+					<p class="text-secondary text-right mb-1"><em>Enero 1, 1999</em></p>
+				</div>
+
+				<div class="container-fluid mt-sm-2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="mca-predica.html">LEER MÁS</a></p>
+				</div>
+			</div>
+
+			<!-- PRÉDICA 10 -->
+
+			<div class="container-listas articulo-en-lista">
+				<div class="container-fluid">
+					<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+					<h2 class="">
+						<a class="neutro" href="mca-predica.html">Lorem Ipsum Dolor Sit Amet</a>
+					</h2>
+				</div>
+
+				<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+					<a class="" href="mca-predica.html">
+						<img class="img-fluid" src="https://picsum.photos/800/450/?image=1078" alt="">
+						<img class="boton-play-icono" src="boton-play.png" alt="">
+					</a>
+				</div>
+
+				<div class="container-fluid">
+					<p class="text-secondary text-right mb-1"><em>Enero 1, 1999</em></p>
+				</div>
+
+				<div class="container-fluid mt-sm-2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="mca-predica.html">LEER MÁS</a></p>
+				</div>
+			</div>
+
+			<!-- PRÉDICA 11 -->
+
+			<div class="container-listas articulo-en-lista">
+				<div class="container-fluid">
+					<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+					<h2 class="">
+						<a class="neutro" href="mca-predica.html">Lorem Ipsum Dolor Sit Amet</a>
+					</h2>
+				</div>
+
+				<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+					<a class="" href="mca-predica.html">
+						<img class="img-fluid" src="https://picsum.photos/800/450/?image=178" alt="">
+						<img class="boton-play-icono" src="boton-play.png" alt="">
+					</a>
+				</div>
+
+				<div class="container-fluid">
+					<p class="text-secondary text-right mb-1"><em>Enero 1, 1999</em></p>
+				</div>
+
+				<div class="container-fluid mt-sm-2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="mca-predica.html">LEER MÁS</a></p>
+				</div>
+			</div>
+
+			<!-- PRÉDICA 12 -->
+
+			<div class="container-listas articulo-en-lista">
+				<div class="container-fluid">
+					<p class="text-secondary mb-0 titulo-categoria">VIDEO</p>
+					<h2 class="">
+						<a class="neutro" href="mca-predica.html">Lorem Ipsum Dolor Sit Amet</a>
+					</h2>
+				</div>
+
+				<div class="container-fluid px-0 mb-2 boton-play-fondo miniatura-post">
+					<a class="" href="mca-predica.html">
+						<img class="img-fluid" src="https://picsum.photos/800/450/?image=604" alt="">
+						<img class="boton-play-icono" src="boton-play.png" alt="">
+					</a>
+				</div>
+
+				<div class="container-fluid">
+					<p class="text-secondary text-right mb-1"><em>Enero 1, 1999</em></p>
+				</div>
+
+				<div class="container-fluid mt-sm-2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="mca-predica.html">LEER MÁS</a></p>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- ______ BOTÓN MOSTRAR MÁS PUBLICACIONES ______ -->
+
+		<div id="div_boton_mostrar_mas" class="container text-center mb-4 mb-sm-5">
+			<button id="boton_mostrar_mas" type="button" class="btn btn-primary">MOSTRAR MÁS PRÉDICAS</button>
+		</div>
+
+	</div>
+
+
+	<!-- ====== FOOTER ====== -->
+
+	<footer class="container-fluid text-center pt-3 pb-1 pt-sm-4 pb-sm-3">
+		<p>Copyleft &copy; Iglesia Cristiana MCA</p>
+
+	</footer>
+
+
+	<!-- jQuery first, then Popper, then Bootstrap JS. -->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+	<script>
+	$(document).ready(function() {
+		$("#boton_mostrar_form").click(function() {
+			$("#form_ordenar").show();
+			$("#div_mostrar_form").hide();
+		} );
+	} );
+
+	$(document).ready(function() {
+		$("#boton_mostrar_mas").click(function() {
+			$("#div_mas_predicas").show();
+			// $("#div_boton_mostrar_mas").hide();
+		} );
+	} );
+	</script>
+</body>
+</html>

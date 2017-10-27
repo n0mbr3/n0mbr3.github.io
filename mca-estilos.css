@@ -1,0 +1,283 @@
+.container-listas {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 100%;
+}
+
+/*.container-960 {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 100%;
+}*/
+
+@media (max-width: 575px) {
+
+	body {
+		font-weight: 300;
+	}
+
+
+}
+
+@media (min-width: 576px) {
+	.container-listas {
+		max-width: 540px;
+	}
+
+}
+
+@media (max-width: 767px) {
+	#form_ordenar {
+		display: none;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.container-listas {
+		max-width: 600px;
+	}
+
+	#div_mostrar_form {
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.container {
+		max-width: 800px;
+	}
+
+/*	.container-960 {
+		max-width: 800px;
+	}*/
+}
+
+
+body {
+	font-size: 18px;
+}
+
+.navbar-brand img {
+	margin-left: -10px;
+}
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+	content: ">";
+
+}
+
+body, .breadcrumb  {
+	/*background-color: #FAFAFA;*/
+	background-color: white;
+
+}
+
+.navbar {
+	/*margin-bottom: 1rem;*/
+	font-size: 1.2rem;
+
+}
+
+.bg-navbar {
+	/*background-color: #054D44;*/
+	/*background-color: #065E54;*/
+	background-color: #065E54;
+	/*border-bottom: 4px solid #83AFAA;*/
+
+	-webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+
+	z-index: 1;
+
+}
+
+.breadcrumb  {
+	font-size: 1.2rem;
+
+}
+
+.breadcrumb a {
+	color: #7b7b7b;
+	padding: 0 3px 0 3px;
+
+}
+
+.breadcrumb a:hover {
+	color: white;
+	background-color: #83afaa;
+	border-radius: 3px;
+	text-decoration: none;
+
+}
+
+h1, .h1 {
+	font-size: 2rem;
+}
+
+h2, .h2 {
+	font-size: 1.6rem;
+}
+
+h3, .h3 {
+	font-size: 1.4rem;
+}
+
+.cuerpo-del-post {
+	/*background-color: #ffffbb;*/
+
+}
+
+audio {
+	width: 100%;
+}
+
+.texto-del-post {
+	font-size: 1.2rem;
+	/*font-size: 19px;*/
+	/*font-weight: 100;*/
+}
+
+/*.texto-de-listas {
+font-size: 1rem;
+}*/
+
+.blockquote {
+	/*background-color: yellow;*/
+	border-left: 4px solid #ccc;
+	padding: 0.1rem 1.5rem 0.1rem 1.5rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	font-size: 1.2rem;
+	color: #555;
+}
+
+.blockquote p {
+	/*background-color: yellow;*/
+	margin-bottom: 0;
+}
+
+.blockquote-footer {
+	margin-top: 1rem;
+}
+
+.lista-ul {
+	margin: 1.5rem;
+}
+
+.lista-ul ul {
+	padding-left: 1rem;
+	border-left: 4px solid #ccc;
+
+}
+
+footer {
+	background-color: #1c1c1c;
+	color: white;
+/*			padding-top: 2rem;
+padding-bottom: 1rem;
+margin-top: 2rem;*/
+}
+
+div.form-ordenar-listas {
+	/*border: 1px solid white;*/
+	/*background: #fcfcfc;*/
+	/*background: white;*/
+	text-align: center;
+	padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+	margin: 0;
+}
+
+.form-ordenar-listas select {
+	width: 92%;
+	height: 2rem;
+}
+
+.form-ordenar-listas legend {
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+	font-weight: 700;
+}
+
+a.neutro {
+	color: inherit;
+}
+
+.articulo-en-lista {
+	padding: 0.5rem 0 0.1rem 0;
+	
+	/*background-color: #f6f6f6;*/
+	/*background-color: #f6fff6;*/
+
+/*	-webkit-box-shadow: 0px 10px 10px -12px rgba(51,51,51,1);
+	-moz-box-shadow: 0px 10px 10px -12px rgba(51,51,51,1);
+	box-shadow: 0px 10px 10px -12px rgba(51,51,51,1);
+*/
+
+-webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.4);
+box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.4);
+
+	margin-bottom: 1.5rem;
+}
+
+.sombra-inferior {
+
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
+
+	/*background-color: orange;*/
+
+	-webkit-box-shadow: 0px 10px 10px -12px rgba(51,51,51,1);
+	-moz-box-shadow: 0px 10px 10px -12px rgba(51,51,51,1);
+	box-shadow: 0px 10px 10px -12px rgba(51,51,51,1);
+
+}
+
+.boton-play-fondo {
+	position: relative;
+}
+
+.boton-play-icono {
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	width: 20%;
+}
+
+.miniatura-post: {
+	opacity: 0.8;
+}
+
+.carrusel-mca-borde {
+	border-bottom: 1px solid #065E54;
+}
+
+.titulo-categoria {
+	font-size: 0.9rem;
+}
+
+#div_mas_predicas {
+	display: none;
+}
+
+/*div {
+	border: 1px solid yellow;
+}
+
+div>div {
+	border: 1px solid magenta;
+}
+
+div>div>div {
+	border: 1px solid cyan;
+}
+*/
