@@ -20,12 +20,25 @@ h1, h2, h3, h4, h5, h6, small {
 	color: black;
 }
 
+.card-body small {
+	font-size: 0.9em;
+}
+
 a.neutro {
 	color: inherit;
 }
 
 .card h2 {
 	font-size: 1.2em;
+}
+
+.card h1 {
+	font-size: 1.5em;
+}
+
+.card-title small {
+	/*font-size: 70% !important;*/
+	font-size: 80%;
 }
 
 @media (max-width: 768px) {
@@ -36,10 +49,6 @@ a.neutro {
 	.carrusel {
 		padding: 0;
 	}	
-}
-
-.card small {
-	font-size: 0.9em;
 }
 
 .card-img-top:hover {
