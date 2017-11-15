@@ -50,12 +50,8 @@
 @media (min-width: 992px) {
 
 	.container {
-		max-width: 800px;
+		max-width: 900px;
 	}
-
-/*	.container-960 {
-		max-width: 800px;
-	}*/
 }
 
 
@@ -81,15 +77,15 @@ body, .breadcrumb  {
 
 .navbar {
 	/*margin-bottom: 1rem;*/
-	font-size: 1.2rem;
+	/*font-size: 1.2rem;*/
 
 }
 
 .bg-navbar {
 	/*background-color: #054D44;*/
 	/*background-color: #065E54;*/
-	background-color: #065E54;
 	/*border-bottom: 4px solid #83AFAA;*/
+	background-color: black;
 
 	-webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
@@ -97,6 +93,19 @@ body, .breadcrumb  {
 
 	z-index: 1;
 
+}
+
+.nav-item {
+	/* bordes negros como el fondo para que no se vean y para que al mostrar
+	el borde blanco en el :hover el elemento no se mueva X pixeles */
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.nav-item:hover {
+	/*background-color: #eee;*/
+	border-top: 1px solid #fff;
+	/*border-bottom: 1px solid #fff;*/
 }
 
 .breadcrumb  {
@@ -119,15 +128,15 @@ body, .breadcrumb  {
 }
 
 h1, .h1 {
-	font-size: 2rem;
+	font-size: 2em;
 }
 
 h2, .h2 {
-	font-size: 1.6rem;
+	font-size: 1.6em;
 }
 
 h3, .h3 {
-	font-size: 1.4rem;
+	font-size: 1.4em;
 }
 
 .cuerpo-del-post {
@@ -212,21 +221,27 @@ a.neutro {
 }
 
 .articulo-en-lista {
-	padding: 0.5rem 0 0.1rem 0;
+	/*padding: 0.5rem 0 0.1rem 0;*/
+	padding: 0 0 0 0;
 	
 	/*background-color: #f6f6f6;*/
 	/*background-color: #f6fff6;*/
 
-/*	-webkit-box-shadow: 0px 10px 10px -12px rgba(51,51,51,1);
-	-moz-box-shadow: 0px 10px 10px -12px rgba(51,51,51,1);
-	box-shadow: 0px 10px 10px -12px rgba(51,51,51,1);
-*/
-
--webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.4);
--moz-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.4);
-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.4);
+	/*-webkit-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.4);
+	box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.4);*/
 
 	margin-bottom: 1.5rem;
+
+	border: 3px solid #F7F7F9;
+}
+
+.articulo-en-lista h3 {
+	font-size: 1.1em;
+}
+
+.articulo-en-lista p {
+	font-size: 0.9em;
 }
 
 .sombra-inferior {
