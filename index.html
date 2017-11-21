@@ -195,11 +195,11 @@
 		<!-- <hr> -->
 		<div class="container py-0 py-md-4"></div>
 
-		<!--____________ MAPA GOOGLE ____________-->
+		<h1>¿Dónde Estamos?</h1>
 
 		<div class="row">
-			<div class="col-md-12">
-				<div class="card bg-dark text-white">
+			<div class="col-md">
+				<div class="card">
 					<a href="index.html"><img class="card-img-top no-hover b-lazy" src="16-9.png" data-src="mapa-google.png" alt=""></a>
 					<div class="card-body">
 						<h1 class="card-title">¿DÓNDE ESTAMOS?</h1>
@@ -207,18 +207,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<!-- <hr> -->
-		<div class="container py-0 py-md-2"></div>
-
-
-		<!--____________ CÓMO LLEGAR ____________-->
-
-		<div class="row">
-			<div class="col-md-6">
-				<!-- <h1>¿Cómo Llegar?</h1> -->
-				<div class="card bg-info text-white border-muted">
+			<div class="col-md">
+				<div class="card">
 					<a href="index.html">
 						<img class="card-img-top b-lazy" src="16-9.png" data-src="https://source.unsplash.com/3wC1S7IFijI/600x338" alt="">
 					</a>
@@ -228,9 +218,8 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="col-md-6">
-				<div class="card bg-info">
+			<div class="col-md">
+				<div class="card">
 					<div class="bg-white">
 						<table class="table table-striped table-sm mb-0">
 							<tr>
@@ -251,8 +240,8 @@
 							</tr>
 						</table>
 					</div>
-					<div class="card-body text-white">
-						<h1 class="card-title mb-0">Horario de Reuniones</h1>
+					<div class="card-body">
+						<h1 class="card-title mb-0 text-center">Horario de Reuniones</h1>
 					</div>
 					<!-- <div class="card-footer">
 						<a class="neutro" href="index.html"><h1 class="card-title">HORARIO <small class="text-muted">de reuniones</small></h1></a>
@@ -260,26 +249,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- <div class="row">
-			<div class="col-md-6"><p>[vacío]</p></div>
-			<div class="col-md-6">
-				<div class="card">
-					<div class="card-header">
-						<h1>Esto es el Header</h1>
-					</div>
-					<img class="card-img-top" src="http://placehold.it/320x180" alt="">
-					<div class="card-body">
-						<h1 class="card-title">Título</h1>
-						<p class="card-text">aquí va algún texto</p>
-					</div>
-					<div class="card-footer">
-						<h1>Esto es el Footer <small class="text-muted">todo esto es small</small></h1>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
 	</div>
 
 	<div class="container py-0 py-md-4"></div>
@@ -294,11 +263,16 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	
-	<script src="blazy.min.js"></script>
-	
+
 	<script>
-		$(document).ready(function() {var bLazy = new Blazy();} );
+		window.addEventListener('load', function(){
+			var allimages= document.getElementsByTagName('img');
+			for (var i=0; i<allimages.length; i++) {
+				if (allimages[i].getAttribute('data-src')) {
+					allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+				}
+			}
+		}, false)
 	</script>
 
 </body>
